@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+/* font-family: 'Roboto Condensed', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content-wraper {
+    max-width:1340px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+ .padding {
+     padding: 0 20px 0 20px;
+ }
+
+  /* img {
+    display: block;
+} */
+
+
+  :root {
+    --Gray: hsl(0, 0%, 48%);
+    --Orange: hsl(35, 94%, 49%);
+    --Pink: hsl(319, 98%, 49%);
+  }
+
+  @media screen and (min-width: 501px) {
+    h1 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    h1 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+    }
+  }
+  
+  h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+  }
+  
+  h6 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: var(--Pink);
+    text-transform: uppercase;
+  }
+
+  p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    color: var(--Gray);
+  }
+
+  .b {
+      font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+
+  }
+
+  ul {
+    list-style: none;
+
+  }
+  li {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    color: var(--Gray);
+  }
+
+  .font-1{
+    color: var(--Orange);
+    text-transform: uppercase;
+    
+}
+
+  .font-2 {
+      color: var(--Gray);
+  }
+
+  .font-3 {
+      font-size: 22px;
+      color: black;
+  }
+
+.up {
+    text-transform: uppercase;
+}
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+    
+  }
+ nav ul {
+    display: none;
+    align-items: right;
+ }
+
+ @media only screen and (min-width: 800px) {
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+
+    }
+
+    nav ul li:last-of-type {
+        color: var(--Pink);
+    }
+
+    .menu-button {
+      display: none;
+    }
+}
+
+ .section-1 {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    align-items: center;
+    justify-self: center;
+    /* align-items: flex-start; */
+ }
+
+ /* @media screen and (max-width: 500px) {
+    .section-1 img {
+        display: relative;
+        height: 70%;
+        width: 70%;
+      /* resize: both; */
+      /* overflow: auto; 
+    }
+  } */
+
+.section-1 h1 {
+    padding-top: 20px;
+}
+
+.section-1 p {
+    padding-top: 20px;
+}
+.section-1 img {
+    max-width: 100%;
+    position: relative;
+    right: 20;
+    max-height: 400px;
+    width: auto;
+    margin-top: -50px;
+}
+
+.button {
+    background-color: transparent;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: fit-content;
+    padding: 10px 30px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+
+.section-2 {
+   
+    background-image: url(./assets/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.section-2 h2 {
+    padding: 100px 30px 10px 30px;
+}
+
+.section-2 p {
+    padding: 0 30px 30px 30px;
+}
+
+.section-2 div {
+    padding: 60px 0 30px 30pxs;
+}
+
+.section-3 {
+    margin: 70px 0;
+}
+
+.companies {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-content: stretch; */
+    gap: 30px;
+}
+
+@media screen and (max-width: 1050px) {
+    .companies {
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-height: 10%;
+  }
+
+  #company-hide  {
+    display: none;
+  }
+
+
+}
+
+.section-4 h2 {
+    padding-top: 40px;
+}
+
+.section-4 p{
+    padding-top: 15px;
+}
+
+.section-4 a{
+    text-decoration: underline;
+}
+
+.cards-section {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 40px 0 100px 0;
+    resize: both;
+    overflow: auto;
+   
+  
+}
+
+/* .card-cover {
+    max-width: 50%;
+    
+} */
+
+.card {
+    max-width: 100%
+}
+
+.card-info {
+    line-height: 1.5;
+    margin-top: -5px;
+    background-color: rgb(207, 207, 207);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-info ul:last-of-type {
+    text-align: right;
+}
+
+.line {
+    border-top: 1px solid rgb(228, 228, 228);
+    padding-bottom: 0px;
+    padding-top: 45px;
+
+}
+
+.section-5 {
+    padding-top: 60px;
+    margin-bottom: -5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ @media screen and (max-width: 500px) {
+    .section-5 {
+        padding-top: 20px;
+        margin-bottom: -5px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .foot-image {
+        align-self: flex-end;
+    }
+
+    .section-5 .button {
+        margin-bottom: 30px;
+    }
+  }
+  
+
+
+.section-5 h1 {
+    padding-top: 20px;
+}
+
+.section-5 p {
+    padding-top: 20px;
+}
+.section-5 img {
+    max-width: 100%;
+    position: relative;
+    right: 20;
+    max-height: 400px;
+    width: auto;
+    /* margin-top: -50px; */
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    
+}
+
+footer .ul {
+    font-size: 10px;
+}
+
+.foot-menu {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+.foot-menu-title {
+    color: rgb(84, 84, 84);
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+  .flex-foot-menu {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 5px;
+  }
+
+  .foot-logo {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 150px;
+      resize: both;
+      overflow: auto;
+  }
+
+
+  @media screen and (max-width: 500px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 70px;
+        
+    }
+  }
+
+  .copyright {
+      font-family: "Roboto Condensed", sans-serif;
+      color: var(--Gray);
+      font-size: 12px;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  @media screen and (max-width: 500px) {
+    .copyright .copy-right{
+        display: none;
+        
+    }
+  }
